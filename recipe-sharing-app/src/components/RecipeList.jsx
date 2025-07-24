@@ -1,27 +1,23 @@
-import { Link } from "react-router-dom";
-import useRecipeStore from "./recipeStore";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SearchBar from "./components/SearchBar";
+import RecipeList from "./components/RecipeList";
+import AddRecipeForm from "./components/AddRecipeForm";
+import RecipeDetail from "./components/RecipeDetail"; // make sure this component exists!
 
-function RecipeList() {
-  const filteredRecipes = useRecipeStore((state) => state.filteredRecipes);
-
+function App() {
   return (
-    <div>
-      {filteredRecipes.length === 0 ? (
-        <p>No recipes found.</p>
-      ) : (
-        filteredRecipes.map((recipe) => (
-          <div key={recipe.id} style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
-            <h3>
-              <Link to={`/recipe/${recipe.id}`} style={{ textDecoration: "none", color: "blue" }}>
-                {recipe.title}
-              </Link>
-            </h3>
-            <p>{recipe.description}</p>
-          </div>
-        ))
-      )}
-    </div>
+    <Router>
+      <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
+        <h1>Recipe Sharing App</h1>
+        <SearchBar />
+        <AddRecipeForm />
+        <Routes>
+          <Route path="/" element={<RecipeList />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-export default RecipeList;
+export default App;
