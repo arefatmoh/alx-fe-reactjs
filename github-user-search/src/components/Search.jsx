@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { fetchAdvancedUsers } from '../services/githubService'
+import { fetchUserData, fetchAdvancedUsers } from '../services/githubService'
 
 const Search = () => {
   const [username, setUsername] = useState('')
@@ -16,8 +16,15 @@ const Search = () => {
     setUsers([])
 
     try {
-      const data = await fetchAdvancedUsers(username, location, minRepos)
-      setUsers(data.items || [])
+      // ✅ Use fetchUserData when searching by username only
+      if (username && !location && !minRepos) {
+        const user = await fetchUserData(username)
+        setUsers([user])  // wrap in array to show in list
+      } else {
+        // ✅ Use advanced search when other fields are filled
+        const data = await fetchAdvancedUsers(username, location, minRepos)
+        setUsers(data.items || [])
+      }
     } catch (err) {
       setError(true)
     } finally {
