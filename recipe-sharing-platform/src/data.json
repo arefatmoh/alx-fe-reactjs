@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Greek Salad",
+    "summary": "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
+{
+  "name": "recipe-sharing-platform",
+  "version": "1.0.0",
+  "description": "A platform for sharing and discovering recipes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "author": "",
+  "license": "ISC"
+}
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+{
+  "extends": "./node_modules/tailwindcss/defaultConfig.js",
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#1DA1F2",
+        "secondary": "#14171A"
+      }
+    }
+  },
+  "plugins": []
+}
+{
+  "name": "recipe-sharing-platform",
+  "version": "1.0.0",
+  "description": "A platform for sharing and discovering recipes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "author": "",
+  "license": "ISC"
+}
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+{
+  "extends": "./node_modules/tailwindcss/defaultConfig.js",
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#1DA1F2",
+        "secondary": "#14171A"
+      }
+    }
+  },
+  "plugins": []
+}
+{
+  "name": "recipe-sharing-platform",
+  "version": "1.0.0",
+  "description": "A platform for sharing and discovering recipes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "author": "",
+  "license": "ISC"
+}
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+{
+  "extends": "./node_modules/tailwindcss/defaultConfig.js",
+  "theme": {
+    "extend": {
+      "colors": {
+        "primary": "#1DA1F2",
+        "secondary": "#14171A"
+      }
+    }
+  },
+  "plugins": []
+}   
+{
+  "name": "recipe-sharing-platform",
+  "version": "1.0.0",
+  "description": "A platform for sharing and discovering recipes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "author": "",
+  "license": "ISC"
+}

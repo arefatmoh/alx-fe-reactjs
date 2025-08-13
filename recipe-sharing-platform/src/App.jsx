@@ -1,9 +1,10 @@
+import React from "react";
+import HomePage from "./components/HomePage";
+
 function App() {
   return (
-    <div className="text-center mt-10">
-      <h1 className="text-3xl font-bold text-blue-500">
-        Hello Tailwind + React 🚀
-      </h1>
+    <div className="bg-gray-100 min-h-screen">
+      <HomePage />
     </div>
   );
 }
