@@ -43,7 +43,7 @@ function AddRecipeForm() {
       <h1 className="text-3xl font-bold mb-6 text-center">Add New Recipe</h1>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto space-y-4"
+        className="bg-white p-6 md:p-8 rounded-lg shadow-lg max-w-2xl mx-auto space-y-4"
       >
         {/* Recipe Title */}
         <div>
@@ -52,7 +52,7 @@ function AddRecipeForm() {
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring focus:ring-blue-200"
+            className="w-full md:w-1/2 border border-gray-300 rounded p-2 focus:outline-none focus:ring focus:ring-blue-200"
             placeholder="Enter recipe title"
           />
           {errors.title && (
