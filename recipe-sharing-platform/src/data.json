@@ -3,193 +3,207 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g parmesan cheese",
+      "Black pepper",
+      "Salt"
+    ],
+    "instructions": [
+      "Cook the spaghetti in salted boiling water until al dente.",
+      "Fry the pancetta until crispy.",
+      "Beat eggs in a bowl, add grated parmesan and pepper.",
+      "Drain pasta, mix with pancetta and remove from heat.",
+      "Stir in egg mixture quickly to avoid scrambling.",
+      "Serve with extra parmesan."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
-  },
-  {
-    "id": 3,
-    "title": "Greek Salad",
-    "summary": "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and olive oil.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast",
+      "2 tbsp tikka masala paste",
+      "200ml cream",
+      "1 onion, chopped",
+      "400g canned tomatoes",
+      "Spices & herbs"
+    ],
+    "instructions": [
+      "Marinate chicken with tikka masala paste and grill until cooked.",
+      "Sauté onions until golden.",
+      "Add tomatoes and spices, simmer for 10 minutes.",
+      "Stir in cream and add chicken pieces.",
+      "Simmer for 5 more minutes and serve with rice."
+    ]
   }
 ]
 {
-  "name": "recipe-sharing-platform",
-  "version": "1.0.0",
-  "description": "A platform for sharing and discovering recipes.",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.19"
-  },
-  "author": "",
-  "license": "ISC"
-}
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src"
+  "id": 3,
+  "title": "Vegetable Stir Fry",
+  "summary": "A quick and healthy stir fry with mixed vegetables and soy sauce.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "1 cup broccoli florets",
+    "1 bell pepper, sliced",
+    "1 carrot, julienned",
+    "2 tbsp soy sauce",
+    "1 tbsp olive oil",
+    "Garlic and ginger"
   ],
-  "exclude": [
-    "node_modules"
+  "instructions": [
+    "Heat olive oil in a pan.",
+    "Add garlic and ginger, sauté for a minute.",
+    "Add broccoli, bell pepper, and carrot, stir fry for 5 minutes.",
+    "Pour in soy sauce and cook for another 2 minutes.",
+    "Serve hot with rice or noodles."
   ]
 }
 {
-  "extends": "./node_modules/tailwindcss/defaultConfig.js",
-  "theme": {
-    "extend": {
-      "colors": {
-        "primary": "#1DA1F2",
-        "secondary": "#14171A"
-      }
-    }
-  },
-  "plugins": []
-}
-{
-  "name": "recipe-sharing-platform",
-  "version": "1.0.0",
-  "description": "A platform for sharing and discovering recipes.",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.19"
-  },
-  "author": "",
-  "license": "ISC"
-}
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src"
+  "id": 4,
+  "title": "Chocolate Chip Cookies",
+  "summary": "Classic cookies with chocolate chips, perfect for a sweet treat.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "125g butter",
+    "100g brown sugar",
+    "1 egg",
+    "200g flour",
+    "100g chocolate chips",
+    "1 tsp vanilla extract"
   ],
-  "exclude": [
-    "node_modules"
+  "instructions": [
+    "Preheat oven to 180°C (350°F).",
+    "Cream butter and sugar together.",
+    "Beat in the egg and vanilla extract.",
+    "Fold in flour and chocolate chips.",
+    "Scoop onto a baking tray and bake for 10-12 minutes.",
+    "Cool on a wire rack before serving."
   ]
-}
-{
-  "extends": "./node_modules/tailwindcss/defaultConfig.js",
-  "theme": {
-    "extend": {
-      "colors": {
-        "primary": "#1DA1F2",
-        "secondary": "#14171A"
-      }
-    }
-  },
-  "plugins": []
-}
-{
-  "name": "recipe-sharing-platform",
-  "version": "1.0.0",
-  "description": "A platform for sharing and discovering recipes.",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.19"
-  },
-  "author": "",
-  "license": "ISC"
-}
-{
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
-}
-{
-  "extends": "./node_modules/tailwindcss/defaultConfig.js",
-  "theme": {
-    "extend": {
-      "colors": {
-        "primary": "#1DA1F2",
-        "secondary": "#14171A"
-      }
-    }
-  },
-  "plugins": []
 }   
 {
-  "name": "recipe-sharing-platform",
-  "version": "1.0.0",
-  "description": "A platform for sharing and discovering recipes.",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-  },
-  "devDependencies": {
-    "tailwindcss": "^2.2.19"
-  },
-  "author": "",
-  "license": "ISC"
+  "id": 5,
+  "title": "Caesar Salad",
+  "summary": "A fresh salad with romaine lettuce, croutons, and Caesar dressing.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "1 head romaine lettuce",
+    "50g croutons",
+    "30g parmesan cheese",
+    "2 tbsp Caesar dressing",
+    "Black pepper"
+  ],
+  "instructions": [
+    "Wash and chop the romaine lettuce.",
+    "In a bowl, combine lettuce, croutons, and parmesan.",
+    "Drizzle with Caesar dressing and toss gently.",
+    "Season with black pepper and serve immediately."
+  ]
+}
+{
+  "id": 6,
+  "title": "Beef Tacos",
+  "summary": "Tasty tacos filled with seasoned ground beef and fresh toppings.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "300g ground beef",
+    "1 taco seasoning packet",
+    "4 taco shells",
+    "Lettuce, tomato, cheese",
+    "Sour cream"
+  ],
+  "instructions": [
+    "Cook ground beef in a pan until browned.",
+    "Add taco seasoning and water, simmer for 5 minutes.",
+    "Fill taco shells with beef mixture.",
+    "Top with lettuce, tomato, cheese, and sour cream.",
+    "Serve immediately."
+  ]
+}
+{
+  "id": 7,
+  "title": "Pancakes",
+  "summary": "Fluffy pancakes served with maple syrup and fresh fruits.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "200g flour",
+    "2 tbsp sugar",
+    "1 tsp baking powder",
+    "1 egg",
+    "300ml milk",
+    "Butter for cooking"
+  ],
+  "instructions": [
+    "In a bowl, mix flour, sugar, and baking powder.",
+    "In another bowl, whisk egg and milk together.",
+    "Combine wet and dry ingredients until smooth.",
+    "Heat butter in a pan, pour batter to form pancakes.",
+    "Cook until bubbles form, flip and cook until golden.",
+    "Serve with maple syrup and fruits."
+  ]
+}
+{
+  "id": 8,
+  "title": "Greek Salad",
+  "summary": "A refreshing salad with cucumbers, tomatoes, olives, and feta cheese.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "1 cucumber, diced",
+    "2 tomatoes, chopped",
+    "50g olives",
+    "100g feta cheese",
+    "Olive oil and oregano"
+  ],
+  "instructions": [
+    "Combine cucumber, tomatoes, olives, and feta in a bowl.",
+    "Drizzle with olive oil and sprinkle with oregano.",
+    "Toss gently and serve chilled."
+  ]
+}
+{
+  "id": 9,
+  "title": "Lentil Soup",
+  "summary": "A hearty soup made with lentils, vegetables, and spices.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "200g lentils",
+    "1 onion, chopped",
+    "2 carrots, diced",
+    "2 celery stalks, diced",
+    "1 tsp cumin",
+    "Salt and pepper"
+  ],
+  "instructions": [
+    "Rinse lentils and set aside.",
+    "In a pot, sauté onion, carrots, and celery until soft.",
+    "Add lentils, water, cumin, salt, and pepper.",
+    "Bring to a boil, then simmer for 30 minutes.",
+    "Blend if desired for a smoother texture."
+  ]
+}
+{
+  "id": 10,
+  "title": "Mushroom Risotto",
+  "summary": "Creamy risotto with mushrooms and parmesan cheese.",
+  "image": "https://via.placeholder.com/150",
+  "ingredients": [
+    "200g Arborio rice",
+    "500ml vegetable broth",
+    "100g mushrooms, sliced",
+    "50g parmesan cheese",
+    "1 onion, chopped",
+    "Butter"
+  ],
+  "instructions": [
+    "Heat butter in a pan, sauté onion until translucent.",
+    "Add mushrooms and cook until soft.",
+    "Stir in Arborio rice, cook for 2 minutes.",
+    "Gradually add broth, stirring constantly until absorbed.",
+    "Finish with parmesan cheese and serve hot."
+  ]
 }
