@@ -1,12 +1,10 @@
-import React from "react";
 import RegistrationForm from "./components/RegistrationForm";
 import FormikForm from "./components/FormikForm";
 
 function App() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="min-h-screen flex flex-col items-center justify-center gap-10 bg-gray-50">
       <RegistrationForm />
-      <hr />
       <FormikForm />
     </div>
   );
