@@ -1,15 +1,16 @@
 // src/__tests__/TodoList.test.jsx
+import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import TodoList from "../components/TodoList";
 
 describe("TodoList Component", () => {
-  test("renders initial todos", () => {
+  test("renders initial todos in TodoList", () => {
     render(<TodoList />);
     expect(screen.getByText("Learn React")).toBeInTheDocument();
     expect(screen.getByText("Build a Todo App")).toBeInTheDocument();
   });
 
-  test("adds a new todo", () => {
+  test("adds a new todo in TodoList", () => {
     render(<TodoList />);
     const input = screen.getByPlaceholderText("Add new todo");
     const addButton = screen.getByText("Add");
@@ -20,18 +21,23 @@ describe("TodoList Component", () => {
     expect(screen.getByText("New Todo")).toBeInTheDocument();
   });
 
-  test("toggles a todo completion", () => {
+  test("toggles a todo completion in TodoList", () => {
     render(<TodoList />);
-    const todoItem = screen.getByText("Learn React").closest("li"); // check parent <li>
-    fireEvent.click(todoItem);
-    expect(todoItem).toHaveClass("line-through");
+    const todo = screen.getByText("Learn React");
+
+    fireEvent.click(todo);
+
+    // Check for class that indicates completion
+    expect(todo).toHaveClass("line-through");
   });
 
-  test("deletes a todo", () => {
+  test("deletes a todo in TodoList", () => {
     render(<TodoList />);
-    const todoItem = screen.getByText("Learn React").closest("li");
-    const deleteButton = todoItem.querySelector("button");
+    const todo = screen.getByText("Learn React");
+    const deleteButton = todo.nextSibling;
+
     fireEvent.click(deleteButton);
-    expect(todoItem).not.toBeInTheDocument();
+
+    expect(screen.queryByText("Learn React")).not.toBeInTheDocument();
   });
 });

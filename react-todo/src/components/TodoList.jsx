@@ -1,7 +1,7 @@
 // src/components/TodoList.jsx
 import React, { useState } from "react";
 
-export default function TodoList() {
+const TodoList = () => {
   const [todos, setTodos] = useState([
     { id: 1, text: "Learn React", completed: false },
     { id: 2, text: "Build a Todo App", completed: true },
@@ -10,11 +10,14 @@ export default function TodoList() {
 
   const addTodo = (e) => {
     e.preventDefault();
-    if (newTodo.trim() === "") return;
-    setTodos([
-      ...todos,
-      { id: Date.now(), text: newTodo.trim(), completed: false },
-    ]);
+    if (!newTodo.trim()) return;
+
+    const todo = {
+      id: Date.now(),
+      text: newTodo.trim(),
+      completed: false,
+    };
+    setTodos([...todos, todo]);
     setNewTodo("");
   };
 
@@ -26,39 +29,41 @@ export default function TodoList() {
     );
   };
 
-  const deleteTodo = (id, e) => {
-    e.stopPropagation(); // prevent toggling when clicking delete
+  const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
     <div className="max-w-md mx-auto p-4 border rounded">
       <h2 className="text-xl font-bold mb-4">Todo List</h2>
-      <form className="flex gap-2 mb-4" onSubmit={addTodo}>
+      <form onSubmit={addTodo} className="flex gap-2 mb-4">
         <input
-          className="flex-1 p-2 border rounded"
           type="text"
           placeholder="Add new todo"
+          className="flex-1 p-2 border rounded"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <button className="bg-blue-500 text-white px-4 rounded" type="submit">
+        <button
+          type="submit"
+          className="bg-blue-500 text-white px-4 rounded"
+        >
           Add
         </button>
       </form>
       <ul className="space-y-2">
         {todos.map((todo) => (
-          <li
-            key={todo.id}
-            onClick={() => toggleTodo(todo.id)}
-            className={`flex justify-between p-2 border rounded ${
-              todo.completed ? "line-through text-gray-400" : ""
-            }`}
-          >
-            <span>{todo.text}</span>
+          <li key={todo.id} className="flex justify-between p-2 border rounded">
+            <span
+              onClick={() => toggleTodo(todo.id)}
+              style={{ cursor: "pointer" }}
+              className={todo.completed ? "line-through text-gray-400" : ""}
+            >
+              {todo.text}
+            </span>
             <button
+              onClick={() => deleteTodo(todo.id)}
               className="text-red-500 font-bold"
-              onClick={(e) => deleteTodo(todo.id, e)}
             >
               X
             </button>
@@ -67,4 +72,6 @@ export default function TodoList() {
       </ul>
     </div>
   );
-}
+};
+
+export default TodoList;
