@@ -1,4 +1,6 @@
-import { Outlet, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import ProfileDetails from "./ProfileDetails";
+import ProfileSettings from "./ProfileSettings";
 
 const Profile = () => (
   <div className="p-4 border rounded">
@@ -7,7 +9,12 @@ const Profile = () => (
       <Link to="details" className="text-blue-500">Details</Link>
       <Link to="settings" className="text-blue-500">Settings</Link>
     </nav>
-    <Outlet />
+
+    {/* Nested routes defined here */}
+    <Routes>
+      <Route path="details" element={<ProfileDetails />} />
+      <Route path="settings" element={<ProfileSettings />} />
+    </Routes>
   </div>
 );
 
