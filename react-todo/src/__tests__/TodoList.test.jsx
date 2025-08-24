@@ -12,12 +12,12 @@ describe("TodoList Component", () => {
   test("adds a new todo", () => {
     render(<TodoList />);
     const input = screen.getByPlaceholderText("Add new todo");
-    const addButton = screen.getByText("Add");
+    const button = screen.getByText("Add");
 
-    fireEvent.change(input, { target: { value: "New Todo" } });
-    fireEvent.click(addButton);
+    fireEvent.change(input, { target: { value: "Write tests" } });
+    fireEvent.click(button);
 
-    expect(screen.getByText("New Todo")).toBeInTheDocument();
+    expect(screen.getByText("Write tests")).toBeInTheDocument();
   });
 
   test("toggles a todo completion", () => {
@@ -25,7 +25,6 @@ describe("TodoList Component", () => {
     const todo = screen.getByText("Learn React");
 
     fireEvent.click(todo);
-
     expect(todo).toHaveClass("line-through");
   });
 
@@ -36,6 +35,6 @@ describe("TodoList Component", () => {
 
     fireEvent.click(deleteButton);
 
-    expect(todo).not.toBeInTheDocument();
+    expect(screen.queryByText("Learn React")).toBeNull();
   });
 });
