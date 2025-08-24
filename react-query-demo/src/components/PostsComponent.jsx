@@ -17,7 +17,10 @@ const PostsComponent = () => {
     isError,
     refetch,
   } = useQuery("posts", fetchPosts, {
-    staleTime: 1000 * 60, // cache for 1 minute
+    staleTime: 1000 * 60,          // cache fresh for 1 minute
+    cacheTime: 1000 * 60 * 5,      // keep cache in memory for 5 minutes
+    refetchOnWindowFocus: false,   // do not refetch when window regains focus
+    keepPreviousData: true,        // keep showing old data while fetching new
   });
 
   if (isLoading) {
