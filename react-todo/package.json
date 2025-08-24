@@ -32,5 +32,4 @@
     "jest-environment-jsdom": "^30.0.5",
     "vite": "^7.1.2"
   }
-
 }
